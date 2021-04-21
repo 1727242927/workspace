@@ -1,0 +1,135 @@
+@import './upload.less';
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition:  "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  transition-delay: 9999s;
+  -webkit-transition-delay: 9999s;
+}
+
+.ant-layout-header {
+  height: 50px;
+  line-height: 50px;
+  background: #0067cd;
+}
+
+// 头像
+.user-info-avatar {
+  display: inline-block;
+  user-select: none;
+  .avatar-wrapper {
+    cursor: pointer;
+    .ant-avatar {
+      vertical-align: top;
+      margin-top: 13px;
+    }
+    .userName {
+      margin-left: 6px;
+    }
+  }
+}
+.header-top-item {
+  padding: 0 12px;
+}
+
+// 当前位置
+.location {
+  line-height: 40px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  -webkit-user-select: none;
+  .icon {
+    font-size: 24px;
+    padding: 6px;
+    margin-right:15px;
+    margin-left: -10px;
+    cursor: pointer;
+    &:hover {
+      color: #1890ff;
+    }
+  }
+}
+
+.table-wrapper {
+  margin-top: 15px;
+}
+
+.table-row-cursor {
+  cursor: pointer;
+}
+
+// 基本信息
+.base-info-wrap {
+  display: flex;
+  margin-bottom: 12px;
+  line-height: 32px;
+  user-select: none;
+  .info-item {
+    margin-right: 30px;
+    display: flex;
+    .fields {
+      color: rgba(0, 0, 0, 0.8);
+    }
+    .value {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.clearfix {
+  zoom: 1;
+  &::after {
+    height: 0;
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    clear: both;
+    content: '';
+  }
+}
+
+// 上传不可点击
+.upload-pointer-events {
+  pointer-events: none;
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.ant-advanced-search-form .ant-form-item {
+  display: flex;
+}
+.ant-advanced-search-form .ant-form-item-control-wrapper {
+  flex: 1;
+}
+
+// menu
+.ant-menu-inline .ant-menu-item:not(:last-child) {
+  margin-bottom: 0;
+}
+.ant-menu-inline .ant-menu-item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ant-menu-inline .ant-menu-submenu-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ant-menu-dark{
+  background: rgb(70, 71, 107)!important;
+  .ant-menu-item-selected{
+    background:#1f2033!important;
+  }
+  .ant-layout-sider{
+    background:rgb(70, 71, 107);
+  }
+  .ant-menu-item{
+    background:rgb(70, 71, 107);
+  }
+}
+
